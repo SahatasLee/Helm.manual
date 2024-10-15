@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  config1.toml: |-
+        message = Hello from config 1
+
+  config2.toml: |-
+        message = This is config 2
+
+  config3.toml: |-
+        message = Goodbye from config 3

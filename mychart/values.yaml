@@ -1,0 +1,22 @@
+image:
+  repository: nginx
+  pullPolicy: Always
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 3000
+
+autoscaling:
+  enabled: false
+
+resources: {}
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
